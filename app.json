@@ -1,0 +1,39 @@
+{
+	"expo": {
+		"name": "Outline",
+		"slug": "unlock-news",
+		"privacy": "public",
+		"sdkVersion": "33.0.0",
+		"platforms": ["ios", "android", "web"],
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#1DE07E"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true
+		},
+		"android": {
+			"package": "com.ronlaniado.news",
+			"intentFilters": [
+				{
+					"action": "VIEW",
+					"data": [
+						{
+							"scheme": "https",
+							"host": "*"
+						}
+					],
+					"category": ["BROWSABLE", "DEFAULT"]
+				}
+			]
+		}
+	}
+}
